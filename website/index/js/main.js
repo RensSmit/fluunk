@@ -4,11 +4,9 @@
         var today = new Date();
         var h = today.getHours();
         var m = today.getMinutes();
-        var s = today.getSeconds();
         h = checkTime(h);
         m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        document.getElementById('time').innerHTML = h + ":" + m;
         var t = setTimeout(startTime, 500);
     }
     

@@ -8,12 +8,124 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 body{
     font-family: sans-serif;
+    margin-top: 3rem;
 }
 
+main{
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+}   
+
+
+
+/* Header ==========================================================================================================================================*/
+header{
+    height: 23rem;
+    border-bottom: 1px solid black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.logo{
+    float: left;
+    margin: 1rem;
+    height: 20rem;
+    width: 80rem;
+}
+
+
+
+
+/* main ==========================================================================================================================================*/
 .clock {
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
-  }
+}
+
+.sections{
+    display: flex;
+    column-count: 2;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.section1{
+    height: 50rem;
+    width: 50rem;
+    flex-direction: column;
+    background: #C9EFC7;
+    padding: 3rem;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 0.403) solid;
+}
+
+
+
+
+.section2{
+    height: 22rem;
+    width: 50rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    background: #C9EFC7;
+    padding: 3rem;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 0.403) solid;
+}
+ 
+
+.section3-1{
+    width: 50%;
+    height: 10rem;
+    float: left;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    background: #31C48D;
+    padding: 3rem;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 0.403) solid;
+}
+
+
+.section3{
+    width: 50%;
+    height: 10rem;
+    float: left;
+    background: #31C48D;
+    padding: 3rem;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 0.403) solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section{
+    height: 50rem;
+    width: 50rem;
+    flex-direction: column;
+    background: #C9EFC7;
+    padding: 3rem;
+    text-align: left;
+    border: 1px rgba(0, 0, 0, 0.403) solid;
+}
+
+
