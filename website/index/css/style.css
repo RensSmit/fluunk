@@ -163,6 +163,18 @@ header{
     justify-content: center;
     align-items: center;
 }
+.heat{
+    display: flex;
+    font-size: 5rem;
+    color: #31C48D;
+    margin-top: 3rem;
+    font-weight: 600;
+}
+
+.updown{
+    display: flex;
+    gap: 4rem;
+}
 
 .downup{
     display: flex;
@@ -170,7 +182,8 @@ header{
     background: none;
     cursor: pointer;
     font-size: 5rem;
-    color: #31C48D;
+    color: #1FA372;
+    font-weight: 600;
 
 }
 
@@ -188,21 +201,21 @@ header{
 .inoutside{
     font-size: 3rem;
     color: #1FA372;
-    font-weight: 730;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .temp{
     font-size: 5rem;
     color: #31C48D;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 .minmax{
     font-size: 2rem;
     color: #31C48D;
-    font-weight: 700;
+    font-weight: 650;
 }
 
 .card10{

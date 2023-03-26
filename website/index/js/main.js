@@ -46,13 +46,24 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
         weather.innerText = weer
 
         const icon = document.getElementById("js--icon").setAttribute("src", "http://openweathermap.org/img/wn/" + iconss + "@2x.png")
-    })
-
-let getal = 18
-console.log(getal)
-
-const upButton = document.getElementById("js--up")
-const downButton = document.getElementById("js--down")
-const heat = document.getElementById("js--heat")
 
 
+        let getal = 18
+        console.log(getal)
+
+        const upButton = document.getElementById("js--up")
+        const downButton = document.getElementById("js--down")
+        const heat = document.getElementById("js--heat")
+
+        heat.innerText = getal + "°";
+        
+        upButton.onclick = function(){
+        getal = getal + 1;
+        heat.innerText = getal + "°"; 
+        }
+
+        downButton.onclick = function(){
+        getal = getal - 1;
+        heat.innerText = getal + "°"; 
+        }
+    });
