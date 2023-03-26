@@ -46,7 +46,7 @@ header{
 
 /* main ==========================================================================================================*/
 .cards{
-    height: 82rem;
+    height: 74rem;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(8,1fr);
@@ -76,7 +76,7 @@ header{
 }
 
 .clock {
-    font-size: 11rem;
+    font-size: 10rem;
     text-align: center;
     color: #1FA372;
     display: flex;
