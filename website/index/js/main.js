@@ -66,4 +66,14 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
         getal = getal - 1;
         heat.innerText = getal + "°"; 
         }
+
+
+
+        const aantal = document.querySelector('.aantal');
+        aantal.style.height = "5rem"
+
+        const euro = document.getElementById("js--euro")
+        euro.innerText = "€ " + "0,75"
+
     });
+

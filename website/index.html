@@ -11,11 +11,17 @@
 <body onload="startTime()">
 <header>
     <img class="logo" src="index/img/fluunk-high-resolution-logo-color-on-transparent-background.png" alt="fluunk logo">
-    <img class="user" src="index/img/user-regular.svg" alt="">
+    <a href="login/login.html"><img class="user" src="index/img/user-regular.svg" alt=""></a>
 </header>
 <main>
     <ul class="cards">
-        <li class="card card1"></li>
+        <li class="card card1">
+            <p class="euro">Stroom vandaag</p>
+            <div class="stroomvandaag">
+                <div class="aantal"></div>
+            </div>
+            <p id="js--euro" class="euro">0,71</p>
+        </li>
         <li class="card card2">
             <div class="clock">
                 <span id="js--time"></span>
@@ -63,7 +69,27 @@
 
         </li>
         <li class="card card11">
+            <div class="type">
+                <p class="types">stroom</p>
+                <section class="tabel stroom">
 
+                </section>
+                <p class="types">stroom</p>
+            </div>
+            <div class="type">
+                <p class="types">gas</p>
+                <section class="tabel gas">
+
+                </section>
+                <p class="types">gas</p>
+            </div>
+            <div class="type">
+                <p class="types">water</p>
+                <section class="tabel water">
+
+                </section>
+                <p class="types">water</p>
+            </div>
         </li>
     </ul>
     
