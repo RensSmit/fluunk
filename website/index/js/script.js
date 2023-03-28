@@ -58,13 +58,13 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
         heat.innerText = getal + "°";
         
         upButton.onclick = function(){
-        getal = getal + 1;
-        heat.innerText = getal + "°"; 
+            getal = getal + 1;
+            heat.innerText = getal + "°"; 
         }
 
         downButton.onclick = function(){
-        getal = getal - 1;
-        heat.innerText = getal + "°"; 
+            getal = getal - 1;
+            heat.innerText = getal + "°"; 
         }
 
 
