@@ -49,7 +49,6 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
 
 
         let getal = 18
-        console.log(getal)
 
         const upButton = document.getElementById("js--up")
         const downButton = document.getElementById("js--down")
@@ -75,5 +74,4 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
         const euro = document.getElementById("js--euro")
         euro.innerText = "€ " + "0,75"
 
-    });
-
+});

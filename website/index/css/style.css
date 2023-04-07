@@ -23,7 +23,7 @@ main{
 
 /* Header ========================================================================================================*/
 header{
-    height: 24rem;
+    height: 13rem;
     border-bottom: 1px solid black;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -32,14 +32,14 @@ header{
 .logo{
     float: left;
     margin: 1rem;
-    height: 20rem;
-    width: 80rem;
+    height: 10rem;
+    width: 40rem;
 }
 
 .user{
     float: right;
-    margin: 7rem;
-    height: 7rem;
+    margin: 4rem;
+    height: 4rem;
     cursor: pointer;
 }
 
