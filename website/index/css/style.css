@@ -132,7 +132,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .card4 {
@@ -142,7 +141,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .card5 {
@@ -152,7 +150,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .card6 {
@@ -162,13 +159,16 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .modus {
     font-size: 4rem;
     font-weight: 400;
     color: #ffffff;
+    border: none;
+    background: none;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 

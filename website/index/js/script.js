@@ -52,6 +52,10 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
 
         const upButton = document.getElementById("js--up")
         const downButton = document.getElementById("js--down")
+        const slapen = document.getElementById("js--slapen")
+        const comfort = document.getElementById("js--comfort")
+        const thuis = document.getElementById("js--thuis")
+        const weg = document.getElementById("js--weg")
         const heat = document.getElementById("js--heat")
 
         heat.innerText = getal + "°";
@@ -63,6 +67,26 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
 
         downButton.onclick = function(){
             getal = getal - 1;
+            heat.innerText = getal + "°"; 
+        }
+
+        slapen.onclick = function(){
+            getal = 18;
+            heat.innerText = getal + "°"; 
+        }
+
+        comfort.onclick = function(){
+            getal = 22;
+            heat.innerText = getal + "°"; 
+        }
+
+        thuis.onclick = function(){
+            getal = 20;
+            heat.innerText = getal + "°"; 
+        }
+
+        weg.onclick = function(){
+            getal = 16;
             heat.innerText = getal + "°"; 
         }
 
