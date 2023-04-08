@@ -24,13 +24,8 @@ main {
 
 
 /* Header ========================================================================================================*/
-<<<<<<< HEAD
 header{
     height: 13rem;
-=======
-header {
-    height: 24rem;
->>>>>>> d99f939bd3343c4ea575309dbc25885821153646
     border-bottom: 1px solid black;
     margin-left: 3rem;
     margin-right: 3rem;
