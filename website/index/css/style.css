@@ -11,21 +11,23 @@ html {
 
 body {
     font-family: sans-serif;
-    margin-top: 3rem;
+    margin-top: 1rem;
     cursor: default;
+    max-height: 100vh;
 }
 
 main {
     height: auto;
     width: 100%;
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 
 
 /* Header ========================================================================================================*/
 header{
-    height: 13rem;
+    height: 15vh;
     border-bottom: 1px solid black;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -33,29 +35,31 @@ header{
 
 .logo {
     float: left;
-    margin: 1rem;
-    height: 10rem;
-    width: 40rem;
+    margin-top: 1rem;
+    height: 12vh;
+    width: 48vh;
 }
 
 .user {
     float: right;
-    margin: 4rem;
-    height: 4rem;
+    margin: 3vh;
+    height: 7vh;
     cursor: pointer;
+    border: 3px black solid;
+    border-radius: 0.7rem;
 }
 
 
 
 /* main ==========================================================================================================*/
 .cards {
-    height: 74rem;
+    height: 62rem;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 3rem;
-    padding: 1rem;
+    padding: 2vh;
 }
 
 .card {
@@ -105,7 +109,7 @@ header{
 }
 
 .clock {
-    font-size: 10rem;
+    font-size: 7rem;
     text-align: center;
     color: #1FA372;
     display: flex;
@@ -114,7 +118,7 @@ header{
 }
 
 .day {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #31C48D;
     display: flex;
@@ -162,7 +166,7 @@ header{
 }
 
 .modus {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #ffffff;
     border: none;
@@ -203,7 +207,7 @@ header{
 
 .updown {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .downup {
@@ -229,21 +233,21 @@ header{
 
 
 .inoutside {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #1FA372;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .temp {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #31C48D;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 .minmax {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #31C48D;
     font-weight: 650;
 }
@@ -257,6 +261,16 @@ header{
     align-items: center;
 }
 
+.weather{
+    font-size: 1.5rem;
+    color: #1FA372;
+    font-weight: 650;
+}
+.icon{
+    height: 9rem;
+    width: 9rem;
+}
+
 
 
 /*tabellen =======================================================================================================*/
@@ -268,24 +282,4 @@ header{
     align-items: center;
     flex-direction: row;
     gap: 10rem;
-}
-
-.types {
-    font-size: 3rem;
-    color: #1FA372;
-    font-weight: 700;
-}
-
-.type {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-}
-
-.tabel {
-    background: white;
-    height: 20rem;
-    width: 10rem;
-    border: solid rgba(0, 0, 0, 0.332) 1px;
 }
