@@ -92,10 +92,49 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
 
 
 
-        const aantal = document.querySelector('.aantal');
-        aantal.style.height = "5rem"
-
-        const euro = document.getElementById("js--euro")
-        euro.innerText = "€ " + "0,75"
+        
 
 });
+
+function link(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+var today = new Date();
+var hours = today.getHours();
+var y = today.getFullYear();
+var month = today.getMonth() +1;
+var hours1 = today.getHours() -1;
+var d = today.getDate();
+let m = month.toString().padStart(2, '0')
+console.log(m)
+let h = hours.toString().padStart(2, '0')
+console.log(h)
+let h1 = hours1.toString().padStart(2, '0')
+console.log(h1)
+
+
+let current = fetch("https://api.energyzero.nl/v1/energyprices?fromDate="+ y +"-"+ m +"-"+ d +"T"+ h1 +"%3A00%3A00.000Z&tillDate="+ y +"-"+ m +"-"+ d +"T"+ h +"%3A59%3A59.999Z&interval=4&usageType=1&inclBtw=true")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(realData){
+        
+        prijs = realData.Prices[0].price;
+        console.log(prijs);
+        
+        f = prijs * 100
+        console.log(f)
+
+        const aantal = document.querySelector('.aantal');
+        aantal.style.height = f+"%";
+
+        const euro = document.getElementById("js--euro");
+        euro.innerText = "€ " + prijs;
+
+
+
+    });
