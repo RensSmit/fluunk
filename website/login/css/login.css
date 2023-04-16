@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: sans-serif;
+    background: #C9EFC7;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.venster{
+    height: 58rem;
+    width: 45rem;
+    background: #eee;
+    border: solid rgba(0, 0, 0, 0.189) 3px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 40rem;
+    height: 12rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: solid rgba(0, 0, 0, 0.189) 3px;
+}
+
+.forms{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.form{
+    padding: .1rem;
+    padding-left: .3rem;
+}
+
+.loginBtn{
+    padding: .5rem;
+    border: solid rgba(0, 0, 0, 0.189) 2px;
+    border-radius: 10%;
+    background: #31C48D;;
+}
+
