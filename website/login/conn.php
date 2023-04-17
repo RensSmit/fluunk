@@ -1,14 +1,14 @@
 <?php
-	//check if the database file exists and create a new if not
+	//checked of database bestaat
 	if(!is_file('db/db_member.sqlite3')){
 		file_put_contents('db/db_member.sqlite3', null);
 	}
-	// connecting the database
+	// connect de database
 	$conn = new PDO('sqlite:db/db_member.sqlite3');
-	//Setting connection attributes
+	//attributes instellingen connecten
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	//Query for creating reating the member table in the database if not exist yet.
+	//query maken als database niet bestaat
 	$query = "CREATE TABLE IF NOT EXISTS member(mem_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username TEXT, password TEXT, firstname TEXT, lastname TEXT)";
-	//Executing the query
+	//query uitvouren
 	$conn->exec($query);
 ?>
