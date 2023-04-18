@@ -72,3 +72,25 @@ h1{
     background: #31C48D;;
 }
 
+.password{
+    display: flex;
+}
+
+p{
+    color: #ff000080
+    
+}
+
+.pass{
+    color: rgb(0 0 0 / 55%);
+    padding-left: 2.8rem;
+    
+    
+}
+
+.data--password{
+    margin-top: 0.2rem;
+    display: flex;
+    align-items:center;
+    gap:1rem;
+}

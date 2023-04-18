@@ -5,6 +5,10 @@
 	if(ISSET($_POST['login'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+			
+		
+		
+					 
 		
 		$query = "SELECT COUNT(*) as count FROM `member` WHERE `username` = :username AND `password` = :password";
 		$stmt = $conn->prepare($query);
@@ -22,4 +26,5 @@
 			header('location:login.php');
 		}
 	}
+
 ?>

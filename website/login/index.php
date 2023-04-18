@@ -20,9 +20,11 @@ session_start();
 					<label>Username</label>
 					<input type="text" name="username" class="form" required="required"/>
 				</div>
+				<div class="password"> <p class="pass">password must be 8 characters</p><p>*</p></div>
 				<div class="data">
 					<label>Password</label>
-					<input type="password" name="password" class="form" required="required"/>
+					<input id="password" type="password" name="password" class="form" required="required"/>
+					 
 				</div>
 				<div class="data">
 					<label>Firstname</label>
