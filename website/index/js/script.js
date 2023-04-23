@@ -36,7 +36,7 @@ let weather = fetch("https://api.openweathermap.org/data/2.5/weather?lat=52.3909
 
 
         const temperature = document.getElementById("js--temp")
-        temperature.innerText = temp + " °C"
+        temperature.innerText = temp + " °C";
 
         const minmax = document.getElementById("js--minmax")
         minmax.innerText = max + "° / " + min + "° feels like " + like + "°"
@@ -110,11 +110,8 @@ var month = today.getMonth() +1;
 var hours1 = today.getHours() -1;
 var d = today.getDate();
 let m = month.toString().padStart(2, '0')
-console.log(m)
 let h = hours.toString().padStart(2, '0')
-console.log(h)
 let h1 = hours1.toString().padStart(2, '0')
-console.log(h1)
 
 
 let current = fetch("https://api.energyzero.nl/v1/energyprices?fromDate="+ y +"-"+ m +"-"+ d +"T"+ h1 +"%3A00%3A00.000Z&tillDate="+ y +"-"+ m +"-"+ d +"T"+ h +"%3A59%3A59.999Z&interval=4&usageType=1&inclBtw=true")
@@ -124,16 +121,79 @@ let current = fetch("https://api.energyzero.nl/v1/energyprices?fromDate="+ y +"-
     .then(function(realData){
         
         prijs = realData.Prices[0].price;
-        console.log(prijs);
         
         f = prijs * 100
-        console.log(f)
 
         const aantal = document.querySelector('.aantal');
         aantal.style.height = f+"%";
 
         const euro = document.getElementById("js--euro");
         euro.innerText = "€ " + prijs;
+
+
+
+    });
+
+let binnen = fetch("https://35258.hosts1.ma-cloud.nl/duurzaamhuis/index.php")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(realData){
+        temp = realData.Temperature;
+        const binnentemp = document.getElementById("js--binnen");
+        binnentemp.innerText = parseFloat(temp).toFixed(1) +" °C";
+
+        woon = realData.Led1;
+        slaap = realData.Led2;
+        keuken = realData.Led3;
+
+        slapen = false;
+        wonen = false;
+        koken = false;
+
+        const woonknop = document.getElementById("js--woon");
+        const slaapknop = document.getElementById("js--slaap");
+        const keukenknop = document.getElementById("js--keuk");
+
+        woonlicht = document.getElementById("woonlicht");
+        woonknop.onclick = function(){
+            if(wonen == false){
+                woonlicht.style.color = "black";
+                wonen = true
+            }
+            else{
+                woonlicht.style.color = "red";
+                wonen = false
+            }
+            
+        }
+
+        slaaplicht = document.getElementById("slaaplicht");
+        slaapknop.onclick = function(){
+            if(slaap == false){
+                slaaplicht.style.color = "black";
+                slaap = true
+            }
+            else{
+                slaaplicht.style.color = "red";
+                slaap = false
+            }
+            
+        }
+
+
+        keukenlicht = document.getElementById("keukenlicht");
+        keukenknop.onclick = function(){
+            if(koken == false){
+                keukenlicht.style.color = "black";
+                koken = true
+            }
+            else{
+                keukenlicht.style.color = "red";
+                koken = false
+            }
+            
+        }
 
 
 

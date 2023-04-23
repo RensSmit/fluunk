@@ -272,6 +272,26 @@ header{
     width: 9rem;
 }
 
+.butto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.light{
+    font-size: 5rem;
+    color: red;
+}
+
+.licht{
+    height: 10rem;
+    width: 10rem;
+    background: #31C48D;
+    border-radius: 10%;
+    border: rgba(0, 0, 0, 0.256) solid 3px;
+    cursor: pointer;
+}
+
 
 
 /*tabellen =======================================================================================================*/
